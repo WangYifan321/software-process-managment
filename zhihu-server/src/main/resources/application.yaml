@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: 
+    url: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      location: 
+      max-request-size: 1000MB
+  redis:
+    host: 
+    port:
+    password: 
+mybatis:
+  type-aliases-package: com.example.demo.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
